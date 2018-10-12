@@ -3,7 +3,7 @@ import {Input} from '@angular/core';
 
 
 import { ApiServiceService } from '../services/api-service.service';
-import { AppComponent } from '../app-component';
+
 
 @Component({
   selector: 'app-photos',
