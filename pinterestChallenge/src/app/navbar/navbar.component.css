@@ -1,0 +1,50 @@
+.fa-pinterest {
+  color: #bd081c;
+  font-weight: bold;
+  font-size: 30px;
+  font-weight: 700px;
+  text-size-adjust: 100%;
+
+}
+
+.navbarContent {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.navbar-nav {
+  margin-left: 20%;
+}
+
+inputSearch {
+  flex-grow: 2;
+}
+
+.inner-addon {
+  position: relative;
+  color: grey;
+}
+
+.inner-addon .fa-search {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.left-addon .fa-search {
+  left: 0px;
+}
+
+.right-addon .fa-search {
+  right: 0px;
+}
+
+.left-addon input {
+  padding-left: 30px;
+}
+
+.right-addon input {
+  padding-right: 30px;
+}

@@ -1,0 +1,19 @@
+.picture_container {
+  margin: 10%;
+
+}
+
+#pictureSection {
+  display: flex;
+  padding: 5%;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+img {
+  margin: 10%;
+  border-radius: 2%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
