@@ -1,4 +1,26 @@
 .photosContent {
   display: flex;
-  align-content: space-around;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+}
+
+app-picture {
+  border: white;
+
+  margin: 1%;
+
+
+
+}
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }

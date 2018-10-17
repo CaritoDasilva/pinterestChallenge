@@ -1,4 +1,4 @@
-<section class="photosContent">
-  <div class="photo"></div>
-  <app-picture *ngFor="let photo of listOfPhotos" [result]="photo"></app-picture>
+<section class="photosContent row">
+
+  <app-picture *ngFor="let photo of listOfPhotos; let i = index" [result]="photo" (click)="getPin(i); pinClick(content)"></app-picture>
 </section>
