@@ -16,7 +16,9 @@ export class PhotosComponent implements OnInit {
   @Output() onPin = new EventEmitter();
   @Output() open = new EventEmitter();
 
+
   constructor() {
+
   }
 
   ngOnInit() {
@@ -31,4 +33,5 @@ export class PhotosComponent implements OnInit {
     this.open.emit(content);
   }
 
+  
 }

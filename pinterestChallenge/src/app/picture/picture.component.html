@@ -1,5 +1,3 @@
-<section id="pictureSection">
-  <div class="picture_container column">
-    <img *ngIf="result" src="{{result.urls.thumb}}">
-  </div>
+<section class="masonry" id=" pictureSection">
+  <img *ngIf="result" class="masonry-brick" src="{{result.urls.thumb}}">
 </section>

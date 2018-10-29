@@ -1,4 +1,9 @@
-<section class="photosContent row">
+<cdk-virtual-scroll-viewport itemSize="50" class="list-container">
 
-  <app-picture *ngFor="let photo of listOfPhotos; let i = index" [result]="photo" (click)="getPin(i); pinClick(content)"></app-picture>
-</section>
+
+  <section class="photosContent row">
+
+    <app-picture *cdkVirtualFor="let photo of listOfPhotos; let i = index" [result]="photo" (click)="getPin(i); pinClick(content)"></app-picture>
+  </section>
+
+</cdk-virtual-scroll-viewport>

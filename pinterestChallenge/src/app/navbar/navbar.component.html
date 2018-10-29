@@ -6,24 +6,38 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#"><i class="fab fa-pinterest"></i></a>
+      <i class="fab fa-pinterest"></i>
       <form class="form-inline my-2 my-lg-0">
         <div class="inner-addon left-addon">
           <i class="fas fa-search"></i>
-          <input class="form-control mr-sm-2" id="inputSearch" type="search" placeholder="Buscar" aria-label="Search"
+          <input class="form-control mr-sm-2" id="inputSearch" type="search" placeholder=" Buscar" aria-label="Search"
             name="barSearch" (keyup)="onKey($event)">
         </div>
       </form>
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navElements">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Siguiendo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <p class="letterC">C</p>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Carolina</a>
+        </li>
+        <div class="itemsElements">
+          <li class="nav-item">
+            <i class="fas fa-comment-dots"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-bell"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-ellipsis-h"></i>
+          </li>
+        </div>
       </ul>
     </div>
   </nav>

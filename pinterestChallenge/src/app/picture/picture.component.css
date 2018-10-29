@@ -1,43 +1,23 @@
-.picture_container {
-  margin: 10%;
-}
-
 img {
-  padding: 1%;
+
   border-radius: 2%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%;
-  /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+.masonry {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -8px;
+  /* Adjustment for the gutter */
+  width: 100%;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+.masonry-brick {
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+  margin: 0 8px 8px 0;
+  /* Some gutter */
 }

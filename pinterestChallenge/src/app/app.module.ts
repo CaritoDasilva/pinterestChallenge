@@ -5,6 +5,8 @@ import { EventEmitter } from '@angular/core/src/event_emitter';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 
 import { AppComponent } from './app.component';
@@ -33,7 +35,9 @@ const routes: Routes = [
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    NgbModule
+    NgbModule,
+    ScrollingModule,
+    InfiniteScrollModule
 
   ],
   providers: [],
