@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter } from '@angular/core';
-import {Output} from '@angular/core';
+import { Output } from '@angular/core';
 
 
 @Component({
@@ -14,13 +14,19 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+
   }
 
-onKey(event) {
-  const inputValue = event.target.value;
-  this.onSearch.emit(inputValue);
-}  
+  onKey(event) {
+    const inputValue = event.target.value;
+    this.onSearch.emit(inputValue);
+  }
 
+  keyPressOnForm = function (event) {
+
+    if (event.keyCode === 13) {
+      event.preventDefault();
+    }
+  }
 
 }

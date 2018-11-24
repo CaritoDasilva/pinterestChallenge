@@ -6,7 +6,8 @@
 
 }
 
-app-picture {
+app-picture,
+app-picture-init {
   border: white;
 
   margin: 1%;

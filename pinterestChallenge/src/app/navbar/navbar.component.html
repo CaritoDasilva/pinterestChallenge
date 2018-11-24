@@ -10,8 +10,8 @@
       <form class="form-inline my-2 my-lg-0">
         <div class="inner-addon left-addon">
           <i class="fas fa-search"></i>
-          <input class="form-control mr-sm-2" id="inputSearch" type="search" placeholder=" Buscar" aria-label="Search"
-            name="barSearch" (keyup)="onKey($event)">
+          <input class="form-control mr-sm-2" id="inputSearch" placeholder=" Buscar" aria-label="Search" name="barSearch"
+            (keyup)="onKey($event)" form ng-keypress="controlador.keyPressOnForm($event)">
         </div>
       </form>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navElements">

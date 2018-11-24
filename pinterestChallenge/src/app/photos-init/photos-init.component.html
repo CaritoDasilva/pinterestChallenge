@@ -1,0 +1,5 @@
+<cdk-virtual-scroll-viewport itemSize="50" class="list-container">
+  <section class="photosContent row">
+    <app-picture-init *cdkVirtualFor="let photo of listPhotosInit; let i = index" [result]="photo" (click)="getPinInit(i); pinClickInit(content2)"></app-picture-init>
+  </section>
+</cdk-virtual-scroll-viewport>

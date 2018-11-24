@@ -14,6 +14,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PhotosComponent } from './photos/photos.component';
 import { PictureComponent } from './picture/picture.component';
 import { PinComponent } from './pin/pin.component';
+import { PictureInitComponent } from './picture-init/picture-init.component';
+import { PhotosInitComponent } from './photos-init/photos-init.component';
 
 
 const routes: Routes = [
@@ -28,7 +30,9 @@ const routes: Routes = [
     NavbarComponent,
     PhotosComponent,
     PictureComponent,
-    PinComponent
+    PinComponent,
+    PictureInitComponent,
+    PhotosInitComponent
   ],
   imports: [
     BrowserModule,

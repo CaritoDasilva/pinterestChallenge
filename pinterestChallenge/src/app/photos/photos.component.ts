@@ -33,5 +33,5 @@ export class PhotosComponent implements OnInit {
     this.open.emit(content);
   }
 
-  
+
 }

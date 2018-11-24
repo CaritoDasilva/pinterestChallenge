@@ -1,10 +1,14 @@
-<app-navbar (onSearch)="search($event)"></app-navbar>
+<app-navbar (onSearch)="search($event); screenChange($event)"></app-navbar>
 
-<app-photos [listOfPhotos]="listOfPhotos" (onPin)="onPin($event); open(content);"></app-photos>
+<div [ngSwitch]=showPhotos>
 
-<app-picture></app-picture>
+  <app-photos-init *ngSwitchCase="'showInit'" [listPhotosInit]="listPhotosInit" (onPinInit)="onPinInit($event); openInit(content2); "></app-photos-init>
 
-<router-outlet></router-outlet>
+  <app-photos *ngSwitchCase="'showSearch'" [listOfPhotos]="listOfPhotos" (onPin)="onPin($event); open(content); "></app-photos>
+</div>
+
+
+
 
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-header">
@@ -15,6 +19,22 @@
   </div>
   <div class="modal-body">
     <img [src]="listOfPhotos[index].urls.small" alt="">
+    <h1></h1>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+  </div>
+</ng-template>
+
+<ng-template #content2 let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title2">{{listPhotosInit[index].description}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <img [src]="listPhotosInit[index].urls.small" alt="">
     <h1></h1>
   </div>
   <div class="modal-footer">
